@@ -6,9 +6,9 @@ const FruitList = () => {
   const fruits = useSelector((state) => state.fruits);
 
   return (
-    <div className="Card">
+    <div>
       {fruits.map((fruit) => (
-        <ul key={fruit} className="Fruit">
+        <ul key={fruit}>
           <li> {fruit.name} </li>
           <img src={fruit.image} alt={fruit.name}></img>
         </ul>
